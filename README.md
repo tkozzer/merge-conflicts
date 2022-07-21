@@ -44,15 +44,15 @@ The following is a list of steps and instructions on how to complete this guided
   - `git checkout feature/add-name` - switch to feature branch
   - `git rebase origin/main`
 - **Step 7️⃣** Resolve any merge conflicts.
-  - You may see a merge conflict that looks something like this:
+  - You should see a merge conflict that looks something like this:
     ![merge conflict](https://tk-assets.lambdaschool.com/dd45683f-788d-4bd9-832e-ed901151615f_ScreenShot2020-04-13at8.38.36AM.png)
-  - To resolve this, you need to go into that file (could be many files depending on how well you and your team are communicating) and remove the markers (`<<<<<<< HEAD`, `=======`, and `>>>>>>> commit id`) and decide which lines of code to remove/keep.
+  - To resolve this, you need to go into that file (could be many files depending on how active your team is in the repo) and remove the markers (`<<<<<<< HEAD`, `=======`, and `>>>>>>> commit id`) and decide which lines of code to remove/keep. In this exercise you can keep both lines.
   - `💡Pro Tip: Once you've done this a few times manually, VSCode has an amazing built in Merge Conflict extension that will step you through the process.`
   - **note**: At this point you have a _dirty_ rebase (merge) and you need to stage the changed files then resume your merge.
   - `git add <file-name>`
 - **Step 8️⃣:** Continue the rebase merge
   - `git rebase --continue`
-  - You will be presented with a commit message prompt in an editor. The commit message should be the message from the last commit on your branch. Save this file and close it. (In the vi editor simply hold shift and press zz)
+  - You will be presented with a commit message prompt in an editor. The commit message should be the message from the last commit on your branch. Save this file and close it. (In the vi editor simply hold shift and press zz [ZZ])
   - you should see the following message from git
 ```
 > git rebase --continue
@@ -60,5 +60,7 @@ The following is a list of steps and instructions on how to complete this guided
  1 file changed, 2 insertions(+), 1 deletion(-)
 Successfully rebased and updated refs/heads/merge-conflict.
 ```
+
+Nice job!! You've walked thru the process of dealing with a merge conlict. You can apply this process to all merges and the only difference will be that step 7 may have more lines of code or files to be resolved.
 
 ### Bernie Durfee
