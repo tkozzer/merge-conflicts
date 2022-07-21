@@ -39,7 +39,7 @@ The following is a list of steps and instructions on how to complete this guided
   - Once again, stage and commit this change
   - `git status` , `git add <file-name>` , `git commit -m 'your message'` , `git push`.
   - **note** this is a fork so you will be able to push to the main branch, typically this will not be allowed in production repos.
-- **Step 6️⃣:** Pull down the main branch onto your branch. The easiest way to do this is to simply run `git rebase origin/main` **but make sure you're on your branch first** `git branch`.
+- **Step 6️⃣:** Pull down the main branch onto your new feature branch. The easiest way to do this is to simply run `git rebase origin/main` **but make sure you're on your branch first** `git branch`.
 - **Step 7️⃣** Resolve any merge conflicts.
   - You may see a merge conflict that looks something like this:
     ![merge conflict](https://tk-assets.lambdaschool.com/dd45683f-788d-4bd9-832e-ed901151615f_ScreenShot2020-04-13at8.38.36AM.png)
