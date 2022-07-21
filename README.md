@@ -29,8 +29,10 @@ The following is a list of steps and instructions on how to complete this guided
   - Once the branch is created run `git status` to ensure that you've switched to the new branch. (You should be in the habit of doing this by the end of your first sprint in labs).
 - **Step 3️⃣:** Now that you have created your branch you're ready to work on the repo. Our task for the day is to have you add your name to the list below (**note** the semantically chosen branch name you created coincides with the task at hand) the `### Your name` heading to the end of this README.md file.
 - **Step 4️⃣:** Run your typical staging, commit and publish commands:
-  - `git status` , `git add <file-name>` , `git commit -m 'your message'`.
-  - 💥**note:** you're pushing to your branch NOT to the main branch. (!!VERY IMPORTANT!!)💥
+  - `git status` - should only show the one file as modified
+  - `git add <file-name>` - try to practice only adding files that support your commit message
+  - `git commit -m 'your message'`
+  - 💥**note:** you're committing to your branch NOT to the main branch. (!!VERY IMPORTANT!!)💥
 - **Step 5️⃣:** Now lets make a change on the main branch that represents the work from another developer
   - `git checkout main`, `git pull` will put us on the main branch and update it
   - Now lets add `### Space Ghost` to the end of this README.md file.
